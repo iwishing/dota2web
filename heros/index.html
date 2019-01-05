@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOTA2控</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="heros.js"></script>
+		<link rel="icon" href="../img/icon.icon" type="image/x-icon" />
+		<link rel="stylesheet" href="heros.css" type="text/css" />
+		<link rel="stylesheet" href="../default.css" type="text/css" />
+
+	</head>
+	<body>
+		<nav class="topmenu navbar navbar-inverse navbar-fixed" role="navigation">
+			<div class="registerAndLogin">
+				<div style="width: 50px; display: inlined-block; float: left;">
+					<a href="#">
+						<img style="width: 100%;" src="../img/defaulPhoto.png" alt="defaultPhoto">
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right ">
+					<li><a href="../register.html" target="_Blank"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+					<li><a href="../Login.html" target="_Blank"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+				</ul>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="../img\header.png" class="dota2-logo img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="nav-c">
+					<ul class="nav navbar-nav">
+						<li><a class=" margin-a" href="../index.html">
+								<span>
+									<p class="nav-a text-center">首页</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">HOME</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">资讯</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">NEWS</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">赛事</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">TOURNAMENTS</p>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span>
+									<p class="nav-a text-center">资料</p>
+								</span>
+								<span class="nav-b text-center">DATA</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dataMenu">
+								<li><a href="index.html">英雄资料</a></li>
+								<li><a href="../items/index.html">物品资料</a></li>
+								<li><a href="#">入门攻略</a></li>
+								<li><a href="#">进阶攻略</a></li>
+							</ul>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">论坛</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">FORUM</p>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-sm-10 col-md-10 col-md-offset-1">
+					<div>
+						<span class="heros1_label">
+							英雄
+						</span>
+						<span class="heros2_label">
+							heros
+						</span>
+					</div>
+					<div>
+						<ul class="nav nav-tabs">
+							<li>
+								<a href="index.html">全部英雄</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="heros_show_container">
+						<div>
+							<div id="heros_show">
+								<div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-2">
+									<div id="hero_Name">
+										撼地者
+									</div>
+									<div id="hero_attribute">
+										先手-控制-耐久-爆发
+									</div>
+								</div>
+								<div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-2">
+									<div class="hero_filter">
+										<span>
+											过滤器&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>
+										<select class="position">
+											<option>
+												按定位
+											</option>
+											<option>
+												所有
+											</option>
+											<option>
+												核心
+											</option>
+											<option>
+												控制
+											</option>
+											<option>
+												先手
+											</option>
+											<option>
+												打野
+											</option>
+											<option>
+												辅助
+											</option>
+											<option>
+												耐久
+											</option>
+											<option>
+												爆发
+											</option>
+											<option>
+												推进
+											</option>
+											<option>
+												逃生
+											</option>
+										</select>
+										<select class="atack_atribute">
+											<option>
+												按攻击类型
+											</option>
+											<option>
+												所有
+											</option>
+											<option>
+												近战
+											</option>
+											<option>
+												远程
+											</option>
+											<option>
+												魔法
+											</option>
+											<option>
+												物理
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="heros_show_minor">
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<div class="heroPadie">
+										<span>
+											<img src="https://www.dota2.com.cn/images/heropedia/overviewicon_str.png">
+										</span>
+										<span>
+											力量
+										</span>
+									</div>
+									<div class="heros heros_img">
+										<ul>
+											<li><a href="hero/earthShaker.html">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/earthshaker_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/sven_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/tiny_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/kunkka_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/beastmaster_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/dragon_knight_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/rattletrap_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/omniknight_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/huskar_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/alchemist_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/brewmaster_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/treant_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/wisp_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/centaur_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/shredder_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/bristleback_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/tusk_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/elder_titan_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/legion_commander_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/earth_spirit_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/phoenix_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/axe_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/pudge_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/sand_king_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/slardar_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/tidehunter_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/wraith_king_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/life_stealer_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/night_stalker_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/doom_bringer_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/spirit_breaker_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/lycan_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/chaos_knight_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/undying_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/magnataur_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/abaddon_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/abyssal_underlord_hphover.png" /></div>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<div class="heroPadie">
+										<span>
+											<img src="https://www.dota2.com.cn/images/heropedia/overviewicon_agi.png">
+										</span>
+										<span>
+											敏捷
+										</span>
+									</div>
+									<div class="heros heros_img">
+										<ul>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/antimage_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/drow_ranger_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/juggernaut_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/mirana_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/morphling_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/phantom_lancer_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/vengefulspirit_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/riki_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/sniper_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/templar_assassin_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/luna_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/bounty_hunter_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/ursa_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/gyrocopter_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/lone_druid_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/naga_siren_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/troll_warlord_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/ember_spirit_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/monkey_king_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/pangolier_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/bloodseeker_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/nevermore_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/razor_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/venomancer_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/faceless_void_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/phantom_assassin_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/viper_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/clinkz_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/broodmother_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/weaver_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/spectre_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/meepo_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/nyx_assassin_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/slark_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/medusa_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/terrorblade_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/arc_warden_hphover.png" /></div>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<div class="heroPadie">
+										<span>
+											<img src="https://www.dota2.com.cn/images/heropedia/overviewicon_int.png">
+										</span>
+										<span>
+											智力
+										</span>
+									</div>
+									<div class="heros">
+										<ul>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/crystal_maiden_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/puck_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/storm_spirit_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/windrunner_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/zuus_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/lina_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/shadow_shaman_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/tinker_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/furion_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/enchantress_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/jakiro_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/chen_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/silencer_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/ogre_magi_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/rubick_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/disruptor_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/keeper_of_the_light_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/skywrath_mage_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/oracle_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/techies_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/dark_willow_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/bane_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/lich_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/lion_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/witch_doctor_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/enigma_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/necrolyte_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/warlock_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/queenofpain_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/death_prophet_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/pugna_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/dazzle_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/leshrac_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/dark_seer_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/batrider_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/ancient_apparition_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/invoker_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/obsidian_destroyer_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/shadow_demon_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/visage_hphover.png" /></div>
+												</a></li>
+											<p></p>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/winter_wyvern_hphover.png" /></div>
+												</a></li>
+											<li><a href="#">
+													<div class="hero_img_div"><img class="hero_img" src="https://www.dota2.com.cn/images/heroes/grimstroke_hphover.png" /></div>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Top">
+				<span>
+					<img style="width: 100px; height: auto;" src="../img/backTop.png" />
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div style="margin: 200px 0 0 0;" class="col-xs-12 col-sm-12 col-md-12 footLabels">
+				<div style="text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-md-offset-3">
+					<span class="footLabel_1">
+						Yesterday is History, Tomorrow is a Mystery, and Today is a Gift. That is why we call it -- the Present.
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

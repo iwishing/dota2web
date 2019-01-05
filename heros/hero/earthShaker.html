@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>撼地者 EarthShaker</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/earthShaker.js"></script>
+		<link rel="icon" href="../../img/icon.icon" type="image/x-icon" />
+		<link rel="stylesheet" href="css/earthShaker.css" type="text/css" />
+		<link rel="stylesheet" href="../../../default.css" type="text/css" />
+
+	</head>
+	<body>
+		<nav class="topmenu navbar navbar-inverse navbar-fixed" role="navigation">
+			<div class="registerAndLogin">
+				<div style="width: 50px; display: inlined-block; float: left;">
+					<a href="#">
+						<img style="width: 100%;" class="defaultPhoto" src="../../img/defaulPhoto.png" alt="defaultPhoto">
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right ">
+					<li><a href="../register.html"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+					<li><a href="../Login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+				</ul>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="../../img/header.png" class="dota2-logo img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="nav-c">
+					<ul class="nav navbar-nav">
+						<li><a class=" margin-a" href="../../index.html">
+								<span>
+									<p class="nav-a text-center">首页</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">HOME</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">资讯</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">NEWS</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">赛事</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">TOURNAMENTS</p>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span>
+									<p class="nav-a text-center">资料</p>
+								</span>
+								<span class="nav-b text-center">DATA</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dataMenu">
+								<li><a href="../index.html">英雄资料</a></li>
+								<li><a href="../../items/index.html">物品资料</a></li>
+								<li><a href="#">入门攻略</a></li>
+								<li><a href="#">进阶攻略</a></li>
+							</ul>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">论坛</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">FORUM</p>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="info_top col-xs-12 col-sm-12 col-md-12">
+					<div>
+						<div class="heroPageImg">
+							<img style="width: 100%;border: 2px solid #53201a;" src="https://www.dota2.com.cn/images/heroes/earthshaker_full.png" />
+						</div>
+						<div class="heroPageLabel">
+							<span class="zh">
+								撼地者
+							</span>
+
+							<span class="en">
+								EarthShaker
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="hero_info col-xs-3 col-sm-3 col-md-3">
+						<div class="hero_info_top">
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<img class="hero_info_img" src="https://www.dota2.com.cn/images/heroes/earthshaker_vert.jpg" />
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="info_icon">
+									<span>
+										<img src="https://www.dota2.com.cn/images/heroes/earthshaker_icon.png" />撼地者
+									</span>
+								</div>
+							</div>
+							<div class="hero_infos col-xs-12 col-sm-12 col-md-12">
+								<ul class="info_ul">
+									<li>
+										<span class="info_t">
+											攻击类型：
+										</span>
+										<span class="info_p">
+											近战
+										</span>
+									</li>
+									<li>
+										<span class="info_t">
+											定位：
+										</span>
+										<span class="info_p">
+											<span>
+												辅助
+											</span>
+											<em></em>
+											<span>
+												先手
+											</span>
+											<em></em>
+											<span>
+												控制
+											</span>
+											<em></em>
+											<span>
+												爆发
+											</span>
+										</span>
+									</li>
+									<li>
+										<span class="info_t">
+											阵营：
+										</span>
+										<span class="info_p">
+											<img class="img-circle" src="https://www.dota2.com.cn/images/heropedia/radiant.jpg" />天辉
+										</span>
+									</li>
+									<li>
+										<span class="info_t">
+											其他称呼：
+										</span>
+										<span class="info_p">
+											小牛，牛，神牛
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="hero_growns col-xs-12 col-sm-12 col-md-12">
+							<div class="hero_grown_label">
+								英雄属性
+							</div>
+							<div class="hero_grown">
+								<ul>
+									<li>
+										<div style="margin: 0 auto; width: 44px;">
+											<img src="../../img/power.png" />
+										</div>
+										<div class="grown_value">
+											22 + 3.2
+										</div>
+									</li>
+									<li>
+										<div style="margin: 0 auto; width: 44px;">
+											<img src="../../img/agility.png" />
+										</div>
+										<div class="grown_value">
+											12 + 1.4
+										</div>
+									</li>
+									<li>
+										<div style="margin: 0 auto; width: 44px;">
+											<img src="../../img/Intelligence.png" />
+										</div>
+										<div class="grown_value">
+											16 + 1.8
+										</div>
+									</li>
+									<p></p>
+									<li>
+										<div style="margin: 0 auto;">
+											<img src="https://www.dota2.com.cn/event/201401/herodata/images/pro4.png" />
+										</div>
+										<div style="margin: 0 auto; width: 20px;">
+											32
+										</div>
+									</li>
+									<li>
+										<div style="margin: 0 auto;">
+											<img src="https://www.dota2.com.cn/event/201401/herodata/images/pro5.png" />
+										</div>
+										<div style="margin: 0 auto; width: 10px;">
+											2
+										</div>
+									</li>
+									<li>
+										<div style="margin: 0 auto;">
+											<img src="https://www.dota2.com.cn/event/201401/herodata/images/pro6.png" />
+										</div>
+										<div style="margin: 0 auto; width: 30px;">
+											310
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div style="width: 275px;border: 5px solid #000000;border-bottom: 20px solid #000000;">
+							<img style="width: 100%;" src="https://www.dota2.com.cn/images/others/earthshaker_big1.jpg" />
+						</div>
+					</div>
+					<div class="info_right col-xs-9 col-sm-9 col-md-9">
+						<div class="hero_info_label">
+							<span>
+								背景故事
+							</span>
+						</div>
+						<div class="back_story">
+							<ul>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和傀儡以及石像鬼类似，撼地者也曾经是大地的一部分，但现在他自由地行走在地面上。不同于那些存在，撼
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;地者自身的意志创造了他，他不需要服从于任何主人。在岩石深处不安宁的沉睡中，他感到了上方世界自由自在的
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;生命的存在。他对此产生了好奇心。在一个地震多发的时期，尼西埃雪山摇动的山顶发生了雪崩，河流的流径改变
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;了，浅浅的山谷变成了深不可测的深渊。大地停止震动后，撼地者从沉淀的灰土中走了出来，像脱下毯子一样抖落
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;无数岩石。他幻化成他想象中的野兽的外形，并自称雷格石蹄。他现在流动着血液、呼吸着空气、也会死亡。但他
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;的精神仍然与大地同在，他的力量在那根永不离身的魔力图腾中。当他回归尘土的那天，大地仍会欢迎这个浪子回
+									</span>
+								</li>
+								<li>
+									<span>
+										&nbsp;&nbsp;&nbsp;家。
+									</span>
+								</li>
+							</ul>
+							<span>
+							</span>
+						</div>
+						<div class="hero_info_label">
+							<span>
+								天赋树
+							</span>
+						</div>
+						<div class="gift_tree">
+							<ul>
+								<li>
+									<span class="talen_explain">
+										-2秒 强化图腾
+									</span>
+									<div class="level">
+										25
+									</div>
+									<span class="talen_explain">
+										+50% 魔法抗性
+									</span>
+								</li>
+								<li>
+									<span class="talen_explain">
+										+400 沟壑距离
+									</span>
+									<div class="level">
+										20
+									</div>
+									<span class="talen_explain">
+										+50 回音击伤害
+									</span>
+								</li>
+								<li>
+									<span class="talen_explain">
+										+7 护甲
+									</span>
+									<div class="level">
+										15
+									</div>
+									<span class="talen_explain">
+										+30 移动速度
+									</span>
+								</li>
+								<li>
+									<span class="talen_explain">
+										+250 魔法
+									</span>
+									<div class="level">
+										10
+									</div>
+									<span class="talen_explain">
+										+30 攻击力
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="hero_info_label">
+							<span>
+								技能简介
+							</span>
+						</div>
+						<div id="skills">
+							<ul id="skillsTab" class="nav nav-tabs">
+								<li class="active">
+									<a href="#firstSkill" data-toggle="tab">
+										<div>
+											<img class="skills_icon" src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_fissure_hp1.png">&nbsp;&nbsp;沟壑
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#secondSkill" data-toggle="tab">
+										<div>
+											<img class="skills_icon" src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_enchant_totem_hp1.png" />&nbsp;&nbsp;强化图腾
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#thirdSkill" data-toggle="tab">
+										<div>
+											<img class="skills_icon" src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_aftershock_hp1.png" />&nbsp;&nbsp;余震
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#finalkill" data-toggle="tab">
+										<div>
+											<img class="skills_icon" src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_echo_slam_hp1.png" />&nbsp;&nbsp;回音击
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div id="skillsTabContent" class="tab-content">
+								<div class="tab-pane fade in active" id="firstSkill">
+									<div>
+										<div class="row" style="margin: 0 0 50px 0;">
+											<div class="col-xs-2 col-sm-2 col-md-2 skills_img">
+												<img src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_fissure_hp1.png" />
+											</div>
+											<div class="col-xs-10 col-sm-10 col-md-10">
+												<div>
+													<div class="skills_name">
+														<span>沟壑</span>
+													</div>
+													<div class="skills_describe">
+														<span>用威武的图腾猛击地面，沿直线裂开地面，制造一条无法通过的岩脊。同时眩晕和伤害地方单位。</span>
+													</div>
+													<div class="skills_tip">
+														<span>小兵将会等待沟壑消失，不回去尝试绕开它。沟壑不会被林肯法球抵挡。</span>
+													</div>
+												</div>
+												<div style="margin: 30px 0 0 00;">
+													<div class="mp">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_xiaohao.png" />&nbsp;&nbsp;&nbsp;&nbsp;魔法消耗：125/140/155/170
+													</div>
+													<div class="cd">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_lengque.png" />&nbsp;&nbsp;&nbsp;&nbsp;冷却时间：21/19/17/15
+													</div>
+												</div>
+												<div class="skills_details">
+													<ul>
+														<li>
+															<span class="skills_details_left">技能：</span>
+															<span class="skills_details_right">点目标</span>
+														</li>
+														<li>
+															<span class="skills_details_left">伤害类型：</span>
+															<span class="skills_details_right">魔法</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">沟壑距离：</span>
+															<span class="skills_details_right">1400</span>
+														</li>
+														<li>
+															<span class="skills_details_left">沟壑持续时间：</span>
+															<span class="skills_details_right">8.0</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">眩晕时间：</span>
+															<span class="skills_details_right">1.0/1.25/1.5/1.75</span>
+														</li>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="skills_bottom">
+											<div class="skills_bottom_label">
+												尼西埃图腾能以惊世之力使大地裂开
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade in" id="secondSkill">
+									<div>
+										<div class="row" style="margin: 0 0 50px 0;">
+											<div class="col-xs-2 col-sm-2 col-md-2 skills_img">
+												<img src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_enchant_totem_hp1.png" />
+											</div>
+											<div class="col-xs-10 col-sm-10 col-md-10">
+												<div>
+													<div class="skills_name">
+														<span>强化图腾</span>
+													</div>
+													<div class="skills_describe">
+														<span>强化撼地者的图腾，下次攻击造成额外伤害。可用神杖升级。</span>
+													</div>
+													<div class="skills_tip">
+														<span>攻击力加成是基于基础攻击力和主属性数值。装备神杖后双击技能会像原来一样释放，不会跳跃。强化图腾拥有克敌先机效果。</span>
+													</div>
+												</div>
+												<div style="margin: 30px 0 0 00;">
+													<div class="mp">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_xiaohao.png" />&nbsp;&nbsp;&nbsp;&nbsp;魔法消耗：35/40/45/50
+													</div>
+													<div class="cd">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_lengque.png" />&nbsp;&nbsp;&nbsp;&nbsp;冷却时间：5.0
+													</div>
+												</div>
+												<div class="skills_details">
+													<ul>
+														<li>
+															<span class="skills_details_left">技能：</span>
+															<span class="skills_details_right">无目标</span>
+														</li>
+														<li>
+															<span class="skills_details_left">攻击力提升：</span>
+															<span class="skills_details_right">100%/200%/300%/400%</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">持续时间：</span>
+															<span class="skills_details_right">14.0</span>
+														</li>
+														<li>
+															<span class="skills_details_left">神杖升级跳跃距离：</span>
+															<span class="skills_details_right">1100</span>
+														</li>
+														<p></p>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="skills_bottom">
+											<div class="skills_bottom_label">
+												瑞格勇猛的蛮力能摧毁山脉
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade in" id="thirdSkill">
+									<div>
+										<div class="row" style="margin: 0 0 50px 0;">
+											<div class="col-xs-2 col-sm-2 col-md-2 skills_img">
+												<img src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_aftershock_hp1.png" />
+											</div>
+											<div class="col-xs-10 col-sm-10 col-md-10">
+												<div>
+													<div class="skills_name">
+														<span>余震</span>
+													</div>
+													<div class="skills_describe">
+														<span>撼地者释放技能时会引起脚下的大地震动，眩晕附近的地方单位并造成额外伤害。</span>
+													</div>
+													<div class="skills_tip">
+														<span>使用物品不会触发余震。</span>
+													</div>
+												</div>
+												<div style="margin: 30px 0 0 00;">
+													<div class="mp">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_xiaohao.png" />&nbsp;&nbsp;&nbsp;&nbsp;魔法消耗：0
+													</div>
+													<div class="cd">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_lengque.png" />&nbsp;&nbsp;&nbsp;&nbsp;冷却时间：0
+													</div>
+												</div>
+												<div class="skills_details">
+													<ul>
+														<li>
+															<span class="skills_details_left">技能：</span>
+															<span class="skills_details_right">被动</span>
+														</li>
+														<li>
+															<span class="skills_details_left">伤害类型：</span>
+															<span class="skills_details_right">魔法</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">作用范围：</span>
+															<span class="skills_details_right">300</span>
+														</li>
+														<li>
+															<span class="skills_details_left">眩晕时间：</span>
+															<span class="skills_details_right">0.6/0.9/1.2/1.5</span>
+														</li>
+														<p></p>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="skills_bottom">
+											<div class="skills_bottom_label">
+												大地在瑞格强有力的步伐下颤抖
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade in" id="finalkill">
+									<div>
+										<div class="row" style="margin: 0 0 50px 0;">
+											<div class="col-xs-2 col-sm-2 col-md-2 skills_img">
+												<img src="https://www.dota2.com.cn/images/heroes/abilities/earthshaker_echo_slam_hp1.png" />
+											</div>
+											<div class="col-xs-10 col-sm-10 col-md-10">
+												<div>
+													<div class="skills_name">
+														<span>回音击</span>
+													</div>
+													<div class="skills_describe">
+														<span>穿过地面的冲击波，伤害敌方单位。每个收到攻击的敌人都会引起伤害附近单位的反射波。英雄本体将引起两次反射。</span>
+													</div>
+													<div class="skills_tip">
+														<span></span>
+													</div>
+												</div>
+												<div style="margin: 30px 0 0 00;">
+													<div class="mp">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_xiaohao.png" />&nbsp;&nbsp;&nbsp;&nbsp;魔法消耗：145/205/265
+													</div>
+													<div class="cd">
+														<img src="https://www.dota2.com.cn/event/201401/herodata/images/icon_lengque.png" />&nbsp;&nbsp;&nbsp;&nbsp;冷却时间：105.0/130.0/110.0
+													</div>
+												</div>
+												<div class="skills_details">
+													<ul>
+														<li>
+															<span class="skills_details_left">技能：</span>
+															<span class="skills_details_right">无目标</span>
+														</li>
+														<li>
+															<span class="skills_details_left">伤害类型：</span>
+															<span class="skills_details_right">魔法</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">初始范围：</span>
+															<span class="skills_details_right">600</span>
+														</li>
+														<li>
+															<span class="skills_details_left">回音伤害：</span>
+															<span class="skills_details_right">70/90/110</span>
+														</li>
+														<p></p>
+														<li>
+															<span class="skills_details_left">初始伤害：</span>
+															<span class="skills_details_right">100</span>
+														</li>
+														<li>
+															<span></span>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="skills_bottom">
+											<div class="skills_bottom_label">
+												地壳开裂，山岳折叠，敌人遭回音击尽数碾压
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Top">
+				<span>
+					<img style="width: 100px; height: auto;" src="../../img/backTop.png" />
+				</span>
+			</div>
+
+		</div>
+		<div class="row">
+			<div style="margin: 200px 0 0 0;" class="col-xs-12 col-sm-12 col-md-12 footLabels">
+				<div style="text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-md-offset-3">
+					<span class="footLabel_1">
+						Yesterday is History, Tomorrow is a Mystery, and Today is a Gift. That is why we call it -- the Present.
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

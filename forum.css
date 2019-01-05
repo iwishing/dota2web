@@ -1,0 +1,244 @@
+html body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:微软雅黑;
+	background-image: url(img/background_forum.jpg);
+	background-repeat:  no-repeat;
+	color: #ccc;
+}
+a:link {
+ color: #ffffff;
+ text-decoration: none;
+}
+a:visited {
+ color: #CCCCCC;
+ text-decoration: none;
+}
+a:hover {
+ color: #ffffff;
+ text-decoration: none;
+}
+.main{
+	padding: 0;
+}
+/* 签到发帖按钮 */
+.u_button{
+	background-image: url(img/signAndPostMessage.png);
+	display: block;
+	float:left;
+	width: 246px;
+	height: 93px;
+}
+/*签到按钮 */
+.u_sign{
+	background-position: 0 0;
+}
+/* 发帖按钮 */
+.u_postMessage{
+	float: right;
+	background-position: -252px 0;
+}
+/* 按钮鼠标覆盖 */
+.u_button span:hover{
+	opacity: 0;
+    transition: opacity 0.5s ease;
+}
+/* 清楚浮动 */
+.clear{
+	clear: both;
+}
+/* 其他信息 */
+
+.nav-tabs{
+	background-color: transparent;
+	border: none;
+}
+.nav-tabs>li{
+	text-align: center;
+	width: 152px;
+	margin: 10px 5px 0 0;
+}
+.nav-tabs>li>a:link{
+	opacity: 0.5;
+	background-color: transparent;
+	border:1px solid #FFFFFF;
+}
+.nav-tabs>li>a:hover{
+	opacity: 1;
+	background-color: transparent;
+}
+.nav-tabs>li>a{
+	border:1px solid #FFFFFF;
+	border-radius: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:link{
+	opacity: 1;
+	color: #FFFFFF;
+	border: none;
+	background-color: transparent;
+	border:1px solid #FFFFFF;
+	border-radius: 0;	
+}
+#myCarousel{
+	border: 2px solid #7c7774;
+}
+/* 顶部菜单 */
+.top_menu{
+	margin-top: 200px;
+}
+.navbar-default{
+	background-color: #a11421;
+	border: none;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-default .navbar-brand{
+	color: #FFFFFF;
+}
+.navbar-form{
+	margin-left: 578px;
+}
+.container-fluid{
+	padding-right: 0;
+}
+/* 第一行 */
+.block{
+	background-color: #F6F7FB;
+	border: 1px solid #e4e6eb;
+	padding: 20px;
+}
+.block_img{
+	display: inline-block;
+}
+.block_img img{
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px #888888;
+}
+.block_img img:hover{
+	transform: scale(1.3,1.3);
+}
+.block_label div{
+	font-size: 20px;
+	color: #000000;
+}
+.block_label span{
+	font-size: 6px;
+	color: #15161a;
+}
+.block ul{
+	padding: 0;
+}
+.block ul li{
+	list-style: none;
+	width: 160px;
+	float: left;
+	margin-left: 60px;
+	text-align: center;
+}
+.top_right_onlineNumber{
+	 width: 100%;
+	 border: 1px solid transparent;
+	 text-align: center;
+	 background-color: #413e44;
+}
+.level_bar{
+	color: #000000;
+}
+/* 第二行 */
+.forum_row2{
+	margin-top: 30px;
+}
+.user{
+	background-color: #f6f7fb;
+	border: 1px solid #e4e6eb;
+}
+.user_img{
+	margin:10px;
+	background-color: #FFFFFF;
+	border: 1px solid #e4e6eb;
+	padding: 2px;
+}
+.user_img img{
+	width: 100%;
+	border: 1px solid #e4e6eb;
+}
+/* 等级图标 */
+.level{
+	margin: 0 20px;
+}
+.level_label{
+	width: 38px;
+	font-size: 19px;
+	color: #000000;
+	position: absolute;
+	text-align: center;
+	left: 60px;
+	top: 167px;
+}
+/* 经验条 */
+.level_bar{
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+.level_bar_div{
+	height: 10px;
+	overflow: hidden;
+}
+/* 经验条图片 17.5px为一个跨度 */
+.level_bar_div img{
+	position: relative;
+	left: 0px;
+	top: -17.5px;
+}
+/* 用户相关操作 */
+.userItems{
+	background-color: #FFFFFF;
+	border: 1px solid #e4e6eb;
+	border-radius: 5px;
+	padding: 1px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.userItems div{
+	border: 1px solid #e4e6eb;	
+	border-radius: 5px;
+
+}
+.userItems a span{
+	color: #000000;
+}
+.btn_sign{
+	width: 100%;
+	height: 53px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.btn_sign img{
+	width: 100%;
+	position: relative;
+	
+}
+.btn_post{
+	width: 100%;
+	height: 53px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+.btn_post img{
+	width: 100%;
+	position: relative;
+	top: -50px;
+}
+/* 帖子显示 */
+.post{
+	padding-right: 0;
+}
+#postList{
+	width: 100%;
+	height: 800px;
+	background-color: #f6f7fb;
+	border: 1px solid #e4e6eb;
+}

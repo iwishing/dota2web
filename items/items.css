@@ -1,0 +1,208 @@
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:微软雅黑;
+	background-image: url(../img/dot2.main.bg.png);
+	color: #ccc;
+
+}
+
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* 顶端菜单 */
+.topmenu {
+	border-radius: 0px;
+	border-bottom-width: 3px;
+	border-bottom-color: #000000;
+	margin: 0px;
+}
+
+/* 导航栏logo */
+.dota2-logo {
+	width: 260px;
+	height: 40px;
+	margin: 19px 20px 0 0;
+}
+
+.nav-a {
+	margin: 0px;
+	font-size: 16px;
+	line-height: 27px;
+}
+
+.nav-b {
+	margin: 0px;
+	font-size: 12px;
+}
+
+.nav-c {
+	margin: 0px;
+}
+
+.margin-a {
+	margin: 0 20px 0 20px;
+}
+
+/* 注册和登录按钮 */
+.registerAndLogin {
+	float: right;
+	margin: 14px 14px 0 0;
+}
+
+/* 下来数据菜单 */
+.dataMenu {
+	background-color: #15161A;
+}
+
+/* 下拉菜单 */
+.dropdown-menu li a {
+	color: #CCCCCC;
+}
+
+/* 数据下拉菜单 */
+.dataMenu li a:hover {
+	color: #FFFFFF;
+	background-color: #000;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #15161A;
+}
+
+.nav-tabs>li>a {
+	background-color: #501d1a;
+	color: #CCCCCC;
+	border: 1px solid #501D1A;
+
+}
+
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+	color: #CCCCCC;
+	border: 1px solid #501D1A;
+	background-color: #501D1A;
+}
+.nav-tabs{
+	border-bottom: 5px solid #501D1A;
+}
+/* 清楚浮动 */
+.clear {
+	clear: both;
+}
+/* 英雄标签1 */
+.items1_label {
+	font-size: 50px;
+	color: #CCCCCC;
+}
+/* 英雄标签2 */
+.items2_label {
+	font-size: 25px;
+	color: #9D9D9D;
+}
+/* 英雄定位显示 */
+#items_show{
+	margin: 20px 0 20px 0;
+	height: 200px;
+	background-color: #000000;
+}
+/* 英雄显示总栏 */
+.items_show_container{
+	background-color: #15161A;
+	padding: 10px;
+}
+/* 物品过滤器 */
+.items_filter{
+	margin: 50px 0 0 90px;
+}
+.items_filter>span{
+	color: #9D9D9D;
+	font-size: 16px;
+}
+.type{
+	font-size: 13px;
+	width: 120px;
+	margin: 0 0 1px 0;
+	background-color: #2a2c2d;
+}
+.work_position{
+	font-size: 13px;
+	width: 120px;
+	margin: 0 0 1px 100px;
+	background-color: #2a2c2d;
+
+}
+#items_Name,#items_attribute{
+	 text-align: center;
+}
+#items_Name{
+	color: #9D9D9D;
+	font-size: 50px;
+	font-weight: bold;
+}
+#work_attribute{
+	font-size: 24px;
+}
+/* 英雄显示总栏里面的下面部分 */
+
+.items_show_minor{
+ height: 535px;
+}
+
+/* 英雄栏 */
+.items{
+	margin: 10px 1px 20px 1px;
+	background-color: #000000;
+	height: 933px;
+}
+.items ul {
+	padding: 23px;
+}
+.items ul li{
+	padding: 3px;
+	display:inline;
+	list-style: none;
+}
+
+/* 英雄图片外面的div */
+.items_img_div{
+	 width: 70px; 
+	 height: 53px; 
+	 display: inline-block;
+}
+/* 英雄图片 */
+.items_img{
+	width: 100%;
+	border: 2px solid #1B1C1F;
+}
+/* 英雄图片被鼠标覆盖 */
+.items_img:hover{
+	transform: scale(1.5,1.5);
+	border: 2px solid #FFFFFF;
+}
+
+/* 回到顶端图标 */
+#Top{
+	position:fixed;/* 相对于浏览器窗口为固定位置,即使窗口滚动也不会移动 */
+	bottom:-100px;
+	right:30px;
+	cursor:pointer;/* 设置鼠标形状为手型 */
+	
+}

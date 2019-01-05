@@ -1,0 +1,397 @@
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:微软雅黑;
+	background-image: url(../../../img/dot2.main.bg.png);
+	color: #ccc;
+
+}
+
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* 顶端菜单 */
+.topmenu {
+	border-radius: 0px;
+	border-bottom-width: 3px;
+	border-bottom-color: #000000;
+	margin: 0px;
+}
+
+/* 导航栏logo */
+.dota2-logo {
+	width: 260px;
+	height: 40px;
+	margin: 19px 20px 0 0;
+}
+
+.nav-a {
+	margin: 0px;
+	font-size: 16px;
+	line-height: 27px;
+}
+
+.nav-b {
+	margin: 0px;
+	font-size: 12px;
+}
+
+.nav-c {
+	margin: 0px;
+}
+
+.margin-a {
+	margin: 0 20px 0 20px;
+}
+
+/* 注册和登录按钮 */
+.registerAndLogin {
+	float: right;
+	margin: 14px 14px 0 0;
+}
+
+/* 下来数据菜单 */
+.dataMenu {
+	background-color: #15161A;
+}
+
+/* 下拉菜单 */
+.dropdown-menu li a {
+	color: #CCCCCC;
+}
+
+/* 数据下拉菜单 */
+.dataMenu li a:hover {
+	color: #FFFFFF;
+	background-color: #000;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #15161A;
+}
+
+.nav-tabs>li>a {
+	background-color: #501d1a;
+	color: #CCCCCC;
+	border: 1px solid #501D1A;
+
+}
+
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover {
+	color: #CCCCCC;
+	border: 1px solid #501D1A;
+	background-color: #501D1A;
+}
+.nav-tabs{
+	border-bottom: 5px solid #501D1A;
+}
+/* 清楚浮动 */
+.clear {
+	clear: both;
+}
+
+/* 回到顶端图标 */
+#Top{
+	position:fixed;/* 相对于浏览器窗口为固定位置,即使窗口滚动也不会移动 */
+	bottom:-100px;
+	right:30px;
+	cursor:pointer;/* 设置鼠标形状为手型 */
+}
+.heroPageImg{
+	 width: 98px; 
+	 height: 54px;
+	 display: inline-block;
+}
+.heroPageLabel{
+	 display: inline-block;
+	 height: 50px;
+}
+/* 英雄中文标签 */
+.zh{
+	font-size: 25px;
+	color: #c0c0c0;
+	margin: auto 0;
+}
+/* 英雄英文标签 */
+.en{
+	font-size: 14px;
+	color: #CCCCCC;
+}
+/* 顶端信息 */
+.info_top{
+	margin: 50px 0 0 0;
+}
+/* 英雄简介 */
+.hero_info{
+	margin: 50px 0 50px 0;
+	 padding: 5px;
+	 height: 580px;
+}
+/* 英雄简介top栏 */
+.hero_info_top{
+	height: 100%;
+	background-color: #501D1A;
+}
+/* 英雄简介图片 */
+.hero_info_img{
+	padding: 5px;
+	border: 1px solid #1B1C1F;
+	margin: 10px 0 20px 0;
+}
+/* 英雄简介列表 */
+.info_ul{
+	list-style: none;
+	padding: 0;
+}
+/* 英雄简介列表行 */
+.info_ul>li{
+	margin-top: 2px;
+	padding: 8px 20px;
+	background-color: #280f0c;
+	line-height: 30px;
+}
+/* 中间的小图标 */
+.info_icon{
+	 width: 125px;
+	 height: 35px;
+	 margin: 0 auto;
+	 font-size: 30px; 
+	 color: #c0c0c0;
+	 font-weight: bold;
+}
+/* 英雄各种信息 */
+.hero_infos{
+	margin: 20px 0 0 0;
+	
+}
+/* 左边标签 */
+.info_t{
+	line-height: 18px;
+	text-align: right;
+}
+/* 右边标签 */
+.info_p{
+	line-height: 18px;
+	text-align: right;
+}
+/* 右边 */
+.info_right{
+	margin: 50px 0 0 0;
+	padding: 0;
+}
+/* 英雄相关信息标签 */
+.hero_info_label{
+	font-size: 25px;
+	color: #C0C0C0;
+	background-color: #0a0a0a;
+	border-bottom: 5px solid #401814;
+	margin: 0 0 0 30px;
+}
+/* 背景故事 */
+.back_story{
+	background-color: #0f0f0f;
+	margin: 0 0 50px 30px;
+}
+.back_story>ul{
+	padding: 0;
+}
+.back_story>ul>li{
+	font-size: 16px;
+	line-height: 30px;
+	list-style: none;
+}
+/* 天赋树 */
+.gift_tree{
+	background-color: #0f0f0f;
+	margin: 0 0 50px 30px;
+}
+.gift_tree>ul{
+	padding: 10px 10px 5px 10px;
+}
+.gift_tree>ul>li{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	list-style: none;
+	background-color: #1B1C1F;
+	margin-bottom: 10px;
+}
+/* 天赋选项 */
+.talen_explain{
+	display: inline-block;
+	color:#c0c0c0;
+	font-size: 16px;
+	width: 365px;
+	line-height: 50px;
+	text-align: center;
+}
+/* 天赋等级 */
+.level{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 26px;
+	line-height: 44px;
+	background-color: #000000;
+	color: #e7d291;
+	font-size: 25px;
+	text-shadow: 0 0 5px #fd6a29, 0 0 5px #FD6A29;
+	border: 2px solid #2c2f33;
+}
+/* 英雄成长框 */
+.hero_growns{
+	background-color: #0f0f0f;
+}
+/* 英雄属性标签 */
+.hero_grown_label{
+	font-size: 25px;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+}
+/* 英雄成长属性展示 */
+.hero_grown{
+	width: 100%;
+	padding: 0 5px;
+	background-color: 0f0f0f;
+	margin-bottom: 50px;
+}
+.hero_grown>ul{
+	padding: 0;
+	background-color: #141516;	
+}
+.hero_grown>ul>li{
+	padding: 0 10px 0 10px;
+	line-height: 30px;
+	list-style: none;
+	display: inline-block;
+}
+.grown_value{
+	margin: 0 auto;
+}
+/* 英雄技能 */
+#skills{
+	background-color: #0A0A0A;	
+	margin: 0 0 0 30px;
+}
+/* 技能标签页 */
+#skillsTab{
+	background: transparent;
+	margin:  0 0 10px 10px;
+}
+.nav-tabs{
+	background-color: transparent;
+	border: none;
+}
+.nav-tabs>li{
+	width: 198px;
+	margin: 10px 5px 0 0;
+}
+.nav-tabs>li>a:link{
+	opacity: 0.5;
+	background-color: #1e1e22;
+	border:none;
+}
+.nav-tabs>li>a:hover{
+	opacity: 1;
+	background-color: #401814;
+}
+.nav-tabs>li>a{
+	border-radius: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:link{
+	opacity: 1;
+	color: #FFFFFF;
+	border: none;
+	background-color: #401814;
+}
+/* 技能内容页 */
+#skillsTabContent{
+	padding: 0 0 10px 0;
+}
+/* 小技能图标 */
+.skills_icon{
+	width: 28px;
+	height: 28px;
+}
+/* 大技能图标 */
+.skills_img{
+	padding: 0 0 0 25px;
+}
+/* 技能名称 */
+.skills_name{
+	font-size: 25px;
+}
+/* 技能描述 */
+.skills_describe{
+	color: #6e6e6e;
+}
+/* 技能提示 */
+.skills_tip{
+	color: #6fe771;
+}
+/* 魔法消耗 */
+.mp{
+	color: #6e6e6e;
+	font-size: 12px;
+	display: inline-block;
+}
+/* 冷却时间 */
+.cd{
+	margin: 0 0 0 90px;
+	color: #6e6e6e;
+	font-size: 12px;
+	display: inline-block;
+}
+/* 技能详情 */
+.skills_details{
+	
+}
+.skills_details>ul{
+	padding: 0;
+	margin: 30px 0 0 0;
+}
+.skills_details>ul>li{
+	font-size: 14px;
+	width: 300px;
+	list-style: none;
+	display: inline-block;
+}
+/* 技能详情左右两部分 */
+.skills_details_left{
+	font-size: 15px;
+}
+.skills_details_right{
+	color: #6E6E6E;
+}
+/* 技能描述底部标签 */
+.skills_bottom{
+	 background-color: #1a1a1e;
+	 margin: 0 10px 0 10px;
+}
+.skills_bottom_label{
+	 margin: 0 auto; 
+	 text-align: center;
+	 height: 30px; 
+	 font-size: 14px;
+	 color: #6E6E6E;
+	 padding: 4px 0 0 0;
+}

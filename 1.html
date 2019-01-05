@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+	$(document).ready(function() {
+		//username验证
+		$("#username").focus(function() {
+			$("#username").css("background-color", "#FFFFCC");
+		});
+		$("#username").blur(function() {
+			var regtitle = /^[a-zA-Z][a-zA-Z0-9_]*$/;
+			var uname = $("#username").val();
+			$("#username").css("background-color", "white");
+			if (uname.length <= 0 || !regtitle.test(uname)) {
+				$("#usernameRight").hide();
+				$("#usernameError").show();
+			} else {
+				$("#usernameRight").show();
+				$("#usernameError").hide();
+			}
+		});
+		//password验证
+		$("#userpassword").focus(function() {
+			$("#userpassword").css("background-color", "#FFFFCC");
+		});
+		$("#userpassword").blur(function(){
+			var upassword = $("#userpassword").val();
+			$("#userpassword").css("background-color", "white");
+			if (upassword.length > 5 && upassword.length < 17) {
+				$("#userpasswordRight").show();
+				$("#userpasswordError").hide();
+			} else {
+				$("#userpasswordRight").hide();
+				$("#userpasswordError").show();
+			}
+		});
+		//password1验证
+		$("#userpassword1").focus(function() {
+			$("#userpassword1").css("background-color", "#FFFFCC");
+		});
+		$("#userpassword1").blur(function(){
+			var upassword = $("#userpassword").val();
+			var upassword1 = $("#userpassword1").val();
+			$("#userpassword1").css("background-color", "white");
+			if (upassword1 != upassword) {
+				$("#userpassword1Right").hide();
+				$("#userpassword1Error").show();
+			} else {
+				$("#userpassword1Right").show();
+				$("#userpassword1Error").hide();
+			}
+		});
+		//userphone验证
+		$("#userphone").focus(function() {
+			$("#userphone").css("background-color", "#FFFFCC");
+		});
+		$("#userphone").blur(function() {
+			var regphone = /^(13[0-9]|15[0-9]|18[0-9]|16[0-9])\d{8}$/;
+			var uphone = $("#userphone").val();
+			$("#userphone").css("background-color", "white");
+			if (uphone.length <= 0 || !regphone.test(uphone)) {
+				$("#userphoneRight").hide();
+				$("#userphoneError").show();
+			} else {
+				$("#userphoneRight").show();
+				$("#userphoneError").hide();
+			}
+		});
+		//usereamil验证
+		$("#useremail").focus(function() {
+			$("#useremail").css("background-color", "#FFFFCC");
+		});
+		$("#useremail").blur(function() {
+			var regemail = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+			var uemail = $("#useremail").val();
+			$("#useremail").css("background-color", "white");
+			if (uemail.length <= 0 || !regemail.test(uemail)) {
+				$("#useremailRight").hide();
+				$("#useremailError").show();
+			} else {
+				$("#useremailRight").show();
+				$("#useremailError").hide();
+			}
+		});
+		//userqq验证
+		$("#userqq").focus(function() {
+			$("#userqq").css("background-color", "#FFFFCC");
+		});
+		$("#userqq").blur(function() {
+			var regQQ = /^\d{5,13}$/;
+			var userqq = $("#userqq").val();
+			$("#userqq").css("background-color", "white");
+			if (userqq.length <= 0 || !regQQ.test(userqq)) {
+				$("#userqqRight").hide();
+				$("#userqqError").show();
+			} else {
+				$("#userqqRight").show();
+				$("#userqqError").hide();
+			}
+		});
+	});
+	function check(){
+		if($(".isRight").css("display")!='none'){
+			if(confirm("确认注册吗？")){
+				return true;
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
+	}
+</script>
+	</head>
+	<body>
+		<form name="myform" onsubmit="return check()" action="fun/logins_register" method="post">
+	<table cellspacing="0" cellpadding="0" width="100%" border="0" height="296" id="table212">
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> 帐 号：    </span>
+			</td>
+			<td width="34%" class="top_hui_text">
+				<input class="editbox40" size="20" id="username" name="username">
+				<font color="red">*</font>
+				<img style="display: none;" id="usernameRight" 
+					src="img/right.png" width="19" class="isRight" height="18"></img>
+			</td>
+			<td id="usernameError" width="46%" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">帐号格式不正确</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> 密 码：    </span>
+			</td>
+			<td class="top_hui_text">
+				<input class="editbox4" type="password" size="20" id="userpassword" name="userpassword"> 
+				<font color="red">*</font> 
+				<img style="display: none;" id="userpasswordRight" class="isRight" 
+					src="img/right.png" width="19" height="18"></img>
+			</td>
+			<td id="userpasswordError" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">密码需6-16位</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> 密码确认：    </span>
+			</td>
+			<td class="top_hui_text">
+				<input class="editbox4" type="password" size="20" id="userpassword1" name="userpassword1"> 
+				<font color="red">*</font> 
+				<img style="display: none;" id="userpassword1Right" class="isRight" 
+					src="img/right.png" width="19" height="18"></img>
+			</td>
+			<td id="userpassword1Error" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">两次密码不一致</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> 邮 箱：    </span>
+			</td>
+			<td class="top_hui_text">
+				<input class="editbox4" size="20" id="useremail" name="useremail"> 
+				<img style="display: none;" id="useremailRight" class="isRight" 
+					src="img/right.png" width="19" height="18"></img>
+			</td>
+			<td id="useremailError" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">邮箱格式不正确</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> QQ ：    </span>
+			</td>
+			<td class="top_hui_text"><input class="editbox4" size="20" id="userqq" name="userqq"> 
+				<img class="isRight" style="display: none;" id="userqqRight" 
+					src="img/right.png" width="19" height="18"></img>
+			</td>
+			<td id="userqqError" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">QQ号码格式不正确</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35" class="top_hui_text">
+				<span class="login_txt"> 手 机：    </span>
+			</td>
+			<td class="top_hui_text"><input class="editbox4" size="20" id="userphone" name="userphone"> 
+				<img style="display: none;" id="userphoneRight" class="isRight" 
+					src="img/right.png" width="19" height="18"></img>
+			</td>
+			<td id="userphoneError" height="35" colspan="2" class="top_hui_text" style="display:none">
+				<font color="red" size="-1">手机号码格式不正确</font>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%" height="35"> </td>
+			<td class="top_hui_text">
+				<input name="submit" type="submit" id="submit" class="button" value="注册" 
+					style="background-image: url('img/Submit_bg.gif');">
+			</td>
+		</tr>
+	</table>
+</form>
+
+	</body>
+</html>

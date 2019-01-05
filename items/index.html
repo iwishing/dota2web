@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOTA2控</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="items.js"></script>
+		<link rel="icon" href="../img/icon.icon" type="image/x-icon" />
+		<link rel="stylesheet" href="items.css" type="text/css" />
+		<link rel="stylesheet" href="../default.css" type="text/css" />
+
+	</head>
+	<body>
+		<nav class="topmenu navbar navbar-inverse navbar-fixed" role="navigation">
+			<div class="registerAndLogin">
+				<div style="width: 50px; display: inlined-block; float: left;">
+					<a href="#">
+						<img style="width: 100%;" src="../img/defaulPhoto.png" alt="defaultPhoto" >
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right ">
+					<li><a href="../register.html" target="_Blank"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+					<li><a href="../Login.html" target="_Blank"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+				</ul>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<img src="../img\header.png" class="dota2-logo img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="nav-c">
+					<ul class="nav navbar-nav">
+						<li><a class=" margin-a" href="../index.html">
+								<span>
+									<p class="nav-a text-center">首页</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">HOME</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">资讯</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">NEWS</p>
+								</span>
+							</a>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">赛事</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">TOURNAMENTS</p>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span>
+									<p class="nav-a text-center">资料</p>
+								</span>
+								<span class="nav-b text-center">DATA</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu dataMenu">
+								<li><a href="../heros/index.html">英雄资料</a></li>
+								<li><a href="index.html">物品资料</a></li>
+								<li><a href="#">入门攻略</a></li>
+								<li><a href="#">进阶攻略</a></li>
+							</ul>
+						</li>
+						<li><a class=" margin-a" href="#">
+								<span>
+									<p class="nav-a text-center">论坛</p>
+								</span>
+								<span>
+									<p class="nav-b text-center">FORUM</p>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-sm-10 col-md-10 col-md-offset-1">
+					<div>
+						<span class="items1_label">
+							物品
+						</span>
+						<span class="items2_label">
+							Items
+						</span>
+					</div>
+					<div>
+						<ul class="nav nav-tabs">
+							<li>
+								<a href="index.html">全部物品</a>
+							</li>
+						</ul>
+					</div>
+					<div class="items_show_container">
+						<div>
+							<div id="items_show">
+								<div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-2">
+									<div id="items_Name">
+										净化药水
+									</div>
+									<div id="items_attribute">
+										提高魔法恢复速率
+									</div>
+								</div>
+								<div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-2">
+										<div class="items_filter">
+											<span>
+												过滤器&nbsp;&nbsp;&nbsp;&nbsp;
+											</span>
+											<select class="type">
+												<option>
+													按类型
+												</option>
+												<option>
+													所有
+												</option>
+												<option>
+													消耗品
+												</option>
+												<option>
+													属性
+												</option>
+												<option>
+													军备
+												</option>
+												<option>
+													奥术
+												</option>
+												<option>
+													普通
+												</option>
+												<option>
+													辅助
+												</option>
+												<option>
+													法器
+												</option>
+												<option>
+													武器
+												</option>
+												<option>
+													防具
+												</option>
+												<option>
+													圣物
+												</option>
+												<option>
+													神秘
+												</option>
+											</select>
+											<select class="work_position">
+												<option>
+													按所在商店位置
+												</option>
+												<option>
+													所有
+												</option>
+												<option>
+													泉水商店
+												</option>
+												<option>
+													野外商店
+												</option>
+												<option>
+													边路商店
+												</option>
+											</select>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="items_show_minor">
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<div class="items">
+										<ul>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/clarity_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/branches_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ring_of_protection_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/wind_lace_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/wraith_band_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ring_of_basilius_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/glimmer_cape_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/lesser_crit_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/hood_of_defiance_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/helm_of_the_dominator_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/demon_edge_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/faerie_fire_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/gauntlets_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/stout_shield_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/magic_stick_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/null_talisman_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/iron_talon_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/force_staff_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/armlet_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/blade_mail_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mask_of_madness_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/eagle_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/enchanted_mango_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/slippers_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/quelling_blade_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/sobi_mask_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/magic_wand_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/headdress_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/veil_of_discord_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/meteor_hammer_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/vanguard_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/dragon_lance_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/reaver_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/tango_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mantle_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/infused_raindrop_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ring_of_regen_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/bracer_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/buckler_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/aether_lens_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/basher_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/soul_booster_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/sange_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/relic_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/flask_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/circlet_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/blight_stone_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/boots_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/soul_ring_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/urn_of_shadows_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/necronomicon_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/invis_sword_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/crimson_guard_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/yasha_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/platemail_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/smoke_of_deceit_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/belt_of_strength_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/orb_of_venom_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/gloves_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/phase_boots_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/tranquil_boots_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/dagon_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/bfury_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/aeon_disk_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/kaya_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/talisman_of_evasion_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/tpscroll_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/boots_of_elves_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/blades_of_attack_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/cloak_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/power_treads_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/medallion_of_courage_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/cyclone_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ethereal_blade_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/black_king_bar_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/echo_sabre_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/hyperstone_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/dust_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/robe_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/chainmail_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ring_of_tarrasque_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/oblivion_staff_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/arcane_boots_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/solar_crest_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/silver_edge_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/lotus_orb_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/maelstrom_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ultimate_orb_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/courier_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/crown_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/quarterstaff_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ring_of_health_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/pers_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ancient_janggo_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/rod_of_atos_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/radiance_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/shivas_guard_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/diffusal_blade_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mystic_staff_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/flying_courier_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ogre_axe_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/helm_of_iron_will_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/void_stone_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/hand_of_midas_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/vladmir_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ultimate_scepter_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/monkey_king_bar_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/manta_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/desolator_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/energy_booster_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ward_observer_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/blade_of_alacrity_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/broadsword_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/gem_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/travel_boots_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mekansm_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/nullifier_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/greater_crit_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/bloodstone_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/heavens_halberd_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/point_booster_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ward_sentry_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/staff_of_wizardry_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/claymore_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/lifesteal_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/moon_shard_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/spirit_vessel_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/orchid_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/butterfly_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/sphere_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/vitality_booster_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/tome_of_knowledge_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/javelin_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/shadow_amulet_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/holy_locket_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/refresher_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/rapier_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/hurricane_pike_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/sange_and_yasha_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/bottle_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mithril_hammer_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/ghost_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/pipe_lg.png" /></div></a></li>
+											<p></p>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/sheepstick_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/abyssal_blade_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/assault_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/blink_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/guardian_greaves_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/octarine_core_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/heart_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/mjollnir_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/skadi_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/satanic_lg.png" /></div></a></li>
+											<li><a href="#"><div class="items_img_div"><img class="items_img" src="https://www.dota2.com.cn/items/images/bloodthorn_lg.png" /></div></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div id="Top">
+				<span>
+					<img style="width: 100px; height: auto;" src="../img/backTop.png" />
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div style="margin: 200px 0 0 0;" class="col-xs-12 col-sm-12 col-md-12 footLabels">
+				<div style="text-align: center;" class="col-xs-6 col-sm-6 col-md-6 col-md-offset-3">
+					<span class="footLabel_1">
+						Yesterday is History, Tomorrow is a Mystery, and Today is a Gift. That is why we call it -- the Present.
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

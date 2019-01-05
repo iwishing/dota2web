@@ -1,0 +1,78 @@
+a:link {
+ color: #ffffff;
+ text-decoration: none;
+}
+a:visited {
+ color: #ffffff;
+ text-decoration: none;
+}
+a:hover {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+#form{
+	width: 330px;
+	margin: 0 auto;
+	padding: 0;
+}
+#form ul{
+	padding: 0;
+}
+#form ul li{
+	width: 100%;
+	margin:20px 0 20px 0;
+	list-style:none;
+}
+
+.input {
+	font-size: 16px;
+	width:330px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+.button{
+	width:330px;
+	color:#ffffff;
+	background-color:#c43030;
+	font-size:24px;
+	border-radius:5px;
+	list-style:none;
+	padding: 10px 80px;
+}
+.checkbox{
+	font-size: 16px;
+	padding: 0px 0px 0px 20px;
+	color:#ffffff;
+}
+.label{
+	color:#ffffff;
+	font-size:31px;
+	width: 100%;
+	margin: 0 auto;
+}
+.foot{
+	background-color: #000000;
+	border-top: 0px;
+}
+.footerLabel{
+	float: right;
+	clear: both;
+}
+.formButton{
+	width:330px;
+	color:#ffffff;
+	background-color:#c43030;
+	font-size:24px;
+	border-radius:5px;
+	padding: 5px 80px;
+	border-color:#c43030;
+}
+/* 页脚标签 */
+.footLabels{
+	margin: 50px 0 0 0;
+}
+/* 默认图片 */
+.defaultPhoto{
+	 width: 100%;
+}
